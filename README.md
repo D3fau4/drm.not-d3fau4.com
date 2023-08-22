@@ -21,7 +21,7 @@ You are likely to get failed attempt for the 1st time when deploying it , do not
 1. Go to the project settings on Vercel
 2. Scroll down to the ```Root Directory```
 3. Untick ```Include source files outside of the Root Directory in the Build Step.```
-4. Save
+4. Savee
 5. Edit anything in the readme.md and save it to trigger Vercel redeploy again.
 
 ## How to use? 
