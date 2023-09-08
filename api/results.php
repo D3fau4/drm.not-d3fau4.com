@@ -24,17 +24,6 @@ if (empty($keyid) || empty($key)) {
 $finalkeyid64 = encodeHexToBase64($keyid);
 $finalkey64 = encodeHexToBase64($key);
 
-$response = [
-    "keys" => [
-        [
-            "kty" => "oct",
-            "k" => $finalkey64,
-            "kid" => $finalkeyid64
-        ]
-    ],
-    "type" => "temporary"
-];
-
 // Establecer el encabezado "Content-Type" y devolver la respuesta JSON
 ?>
 
