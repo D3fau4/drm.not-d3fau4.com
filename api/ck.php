@@ -5,5 +5,6 @@ $error = 2;
 
 $keyid = $_GET["keyid"];
 $key = $_GET["key"];
+$domain = (isset($_GET["URL"])) ? $_GET["URL"] : "drm.not-d3fau4.com";
 
-die(base64_encode(json_encode(Array($keyid => $key))));
+die("$domain?&ck=".base64_encode(json_encode(Array($keyid => $key))));
