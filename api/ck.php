@@ -6,4 +6,4 @@ $error = 2;
 $keyid = $_GET["keyid"];
 $key = $_GET["key"];
 
-die(json_decode(json_encode(Array($keyid => $key))));
+die(base64_encode(json_encode(Array($keyid => $key))));
