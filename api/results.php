@@ -36,5 +36,16 @@ $response = [
 ];
 
 // Establecer el encabezado "Content-Type" y devolver la respuesta JSON
-header("Content-Type: application/json");
-echo json_encode($response);
+?>
+
+
+{  
+    "keys":[  
+       {  
+          "kty":"oct",
+          "k":"<?php echo $finalkey64;?>",
+          "kid":"<?php echo $finalkeyid64;?>"
+       }
+    ],
+    "type":"temporary"
+ }
