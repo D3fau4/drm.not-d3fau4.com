@@ -5,7 +5,7 @@ error_reporting(0);
 // Obtener los valores de los parámetros GET
 $keyid = $_GET["keyid"] ?? '';
 $key = $_GET["key"] ?? '';
-$domain = $_GET["URL"] ?? "drm.not-d3fau4.com";
+$domain = (isset($_GET["URL"]) && !empty($_GET["URL"])) ? $_GET["URL"] : "drm.not-d3fau4.com";
 
 // Validación
 if (empty($keyid) || empty($key)) {
