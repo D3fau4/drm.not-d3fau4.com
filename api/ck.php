@@ -20,5 +20,7 @@ if (empty($keyid) || empty($key)) {
     exit;
 }
 
+$url = "$domain?&ck=" . base64_encode(json_encode([$keyid => $key]));
+
 // Generar y mostrar la URL
-die("$domain?&ck=" . base64_encode(json_encode([$keyid => $key])));
+die("<a href='$url'>$url</a>");
