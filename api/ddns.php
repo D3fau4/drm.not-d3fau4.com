@@ -27,7 +27,7 @@ $ttl = empty($_GET['ttl']) ? 1 : $_GET['ttl']; // TTL (1 = auto)
 // Authentication Header
 $headers = [
     'X-Auth-Email: ' . $email,
-    'Authorization: Bearer' . $api_key,
+    'Authorization: Bearer ' . $api_key,
     'Content-Type: application/json'
 ];
 
