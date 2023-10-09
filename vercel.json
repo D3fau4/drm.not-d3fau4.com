@@ -5,6 +5,9 @@
     },
     "api/ck.php": {
       "runtime": "vercel-php@0.6.0"
+    },
+    "api/ddns.php": {
+      "runtime": "vercel-php@0.6.0"
     }
   }
 }
